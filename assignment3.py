@@ -1,9 +1,9 @@
-x = float(input("Please enter the first angle:"))
-y = float(input("Please enter the second angle:"))
-z = float(input("Please enter the third angle:"))
+x = int(input("Please enter the first angle:"))
+y = int(input("Please enter the second angle:"))
+z = int(input("Please enter the third angle:"))
 
 if (x > 0 and y > 0 and z > 0):
-    if (x+y+z==180):
+    if x+y+z == 180:
         if (x >= y and x >= z):
             largest = x
         elif y >= z:
@@ -11,14 +11,14 @@ if (x > 0 and y > 0 and z > 0):
         else:
             largest = z
 
-            if largest > 90:
-                triangle = "n obtuse"
-            elif largest == 90:
-                triangle = " right"
-            else:
-                triangle = "n acute" 
+        if largest > 90:
+            triangle = "n obtuse"
+        elif largest == 90:
+            triangle = " right"
+        else:
+            triangle = "n acute" 
 
-            print("The triangle is a" + triangle, "triangle")    
+        print("The triangle is a" + triangle, "triangle")    
 
     else:
         print("The entered values are not valid.")
