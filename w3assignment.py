@@ -1,10 +1,10 @@
-#plaintext = input("text")
-#shift = input("shift")
+plaintext = str.lower(input("Enter text to encrypt > "))
+#plaintext = "programming python is fun!"
 
-plaintext = "programming python is fun!"
+#shift = input("shift: ")
 shift = 5
 
-dictionary = {" ": " ", ",": ",", ".": ".", "!": "!", "?": "?", "-": "-"}
+dictionary = {" ": " ", ",": ",", ".": ".", "!": "!", "?": "?", "-": "-", ";": ";", ":": ":"}
 encrypted = ""
 letters = "abcdefghijklmnopqrstuvwxyz"
 i = 0
