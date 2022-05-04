@@ -1,5 +1,5 @@
 shift = input("shift (0-25): ")
-while not(shift.isdecimal()) or int(shift) > 25 or int(shift) < 0:
+while not(shift.isdecimal() and (int(shift)) in range(26)):
     print(shift, "is not a number between 0 and 25")
     shift = (input("shift (0-25): "))
 
